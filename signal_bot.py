@@ -9,8 +9,9 @@ from datetime import datetime
 from telegram import Bot
 from telegram.constants import ParseMode
 
-BOT_TOKEN  = "YOUR_BOT_TOKEN_HERE"
-CHAT_ID    = "YOUR_CHAT_ID_HERE"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
+CHAT_ID   = os.environ.get("CHAT_ID")
 
 WATCHLIST = [
     "AAPL", "MSFT", "NVDA", "GOOGL", "AMZN",
